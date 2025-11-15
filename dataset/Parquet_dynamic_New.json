@@ -1,5 +1,5 @@
 {
-	"name": "Json_dynamic",
+	"name": "Parquet_dynamic_New",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ADLS",
@@ -17,7 +17,7 @@
 			}
 		},
 		"annotations": [],
-		"type": "Json",
+		"type": "Parquet",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
@@ -33,15 +33,9 @@
 					"value": "@dataset().container",
 					"type": "Expression"
 				}
-			}
+			},
+			"compressionCodec": "snappy"
 		},
-		"schema": {
-			"type": "object",
-			"properties": {
-				"cdc": {
-					"type": "string"
-				}
-			}
-		}
+		"schema": []
 	}
 }

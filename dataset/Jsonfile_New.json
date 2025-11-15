@@ -1,5 +1,5 @@
 {
-	"name": "Json_dynamic",
+	"name": "Jsonfile_New",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ADLS",
@@ -35,13 +35,6 @@
 				}
 			}
 		},
-		"schema": {
-			"type": "object",
-			"properties": {
-				"cdc": {
-					"type": "string"
-				}
-			}
-		}
+		"schema": {}
 	}
 }
